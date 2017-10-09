@@ -2,14 +2,15 @@
   "name": "bamboo-sample-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "mocha -R mocha-bamboo-reporter --reporter-options output=output/mocha.json"
+    "test": "mocha -R mocha-bamboo-reporter --reporter-options output=output/mocha.json",
+    "coverage": "istanbul cover _mocha"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "chai": "4.1.2",
+    "istanbul": "0.4.5",
     "mocha": "4.0.1",
     "mocha-bamboo-reporter": "1.1.1"
   }
