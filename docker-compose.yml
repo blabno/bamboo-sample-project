@@ -1,0 +1,9 @@
+version: '2.1'
+services:
+  web:
+    image: docker.labnoratory.com/bamboo-sample-project
+    build:
+      context: .
+    command: npm test
+    volumes:
+      - ./output:/app/output
