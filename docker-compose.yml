@@ -4,6 +4,6 @@ services:
     image: docker.labnoratory.com/bamboo-sample-project
     build:
       context: .
-    command: npm test
+    command: npm run ci
     volumes:
       - ./output:/app/output
